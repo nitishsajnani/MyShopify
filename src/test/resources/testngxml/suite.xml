@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test Set">
+ <listeners>
+   <listener class-name="com.myshopify.utilities.Listeners"/>
+ 
+  </listeners>
+	<test name="Login into application">
+		<classes>
+			<class
+				name="com.myshopify.tests.TC001_LoginIntoApplication" />
+		</classes>
+	</test>
+
+</suite>

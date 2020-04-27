@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Set]">
+  <listeners>
+    <listener class-name="com.myshopify.utilities.Listeners"/>
+  </listeners>
+  <test name="Login into application">
+    <classes>
+      <class name="com.myshopify.tests.TC001_LoginIntoApplication"/>
+    </classes>
+  </test> <!-- Login into application -->
+  <test name="Login into application(failed)">
+    <classes>
+      <class name="com.myshopify.tests.TC001_LoginIntoApplication">
+        <methods>
+          <include name="handleTestMethodName"/>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+          <include name="TestStep01_UserSubmitLoginDetails"/>
+          <include name="init"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC001_LoginIntoApplication -->
+    </classes>
+  </test> <!-- Login into application(failed) -->
+</suite> <!-- Failed suite [Test Set] -->

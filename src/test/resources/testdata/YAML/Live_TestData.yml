@@ -1,0 +1,6 @@
+loginApp:
+ baseUrl: https://ecom-optimus.myshopify.com/
+
+HomePage:  
+ LoginDetails:
+  password: "idgad"
