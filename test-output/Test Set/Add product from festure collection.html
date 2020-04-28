@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Add product from festure collection</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 28 00:38:44 IST 2020</td>
+<td>Started on:</td><td>Tue Apr 28 11:37:45 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15147 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11976 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,67 +67,167 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep01_UserSubmitLoginDetails()'><b>TestStep01_UserSubmitLoginDetails</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection<br/>
-<a href="#Output-789982400" onClick='toggleBox("Output-789982400", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.beforeMethod()'><b>beforeMethod</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection<br/>
+<a href="#Output-1201337769" onClick='toggleBox("Output-1201337769", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-789982400" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-789982400">
-User enters the button: password<br/>
-User enters the idgad<br/>
-User is successfully login into the application<br/>
+<a href="#Output-1201337769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1201337769">
+chrome<br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
-<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@4b952a2d</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
+  (Session info: chrome=81.0.4044.122)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9.19 seconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3NQPI56&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:147)
+	at com.myshopify.webfactory.WebDriverFactory.getChromeDriver(WebDriverFactory.java:82)
+	at com.myshopify.webfactory.WebDriverFactory.getDriver(WebDriverFactory.java:45)
+	at com.myshopify.webfactory.TestSessionInitiator.configureBrowser(TestSessionInitiator.java:31)
+	at com.myshopify.webfactory.ShopTestInitiator.&lt;init&gt;(ShopTestInitiator.java:29)
+	at com.myshopify.tests.BaseTest.beforeMethod(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1201337769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201337769'><pre>org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
+  (Session info: chrome=81.0.4044.122)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9.19 seconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3NQPI56&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:147)
+	at com.myshopify.webfactory.WebDriverFactory.getChromeDriver(WebDriverFactory.java:82)
+	at com.myshopify.webfactory.WebDriverFactory.getDriver(WebDriverFactory.java:45)
+	at com.myshopify.webfactory.TestSessionInitiator.configureBrowser(TestSessionInitiator.java:31)
+	at com.myshopify.webfactory.ShopTestInitiator.&lt;init&gt;(ShopTestInitiator.java:29)
+	at com.myshopify.tests.BaseTest.beforeMethod(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@5025a98f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep02_UserNavigateToFeatureCollection()'><b>TestStep02_UserNavigateToFeatureCollection</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection<br/>
-<a href="#Output-288615534" onClick='toggleBox("Output-288615534", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-288615534" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-288615534">
-User select the product number from list: 1<br/>
-User is able to search and select the product<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@4b952a2d</td></tr>
-<tr>
-<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep03_UserAddedTheProduct()'><b>TestStep03_UserAddedTheProduct</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection<br/>
-<a href="#Output-2048102341" onClick='toggleBox("Output-2048102341", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2048102341" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2048102341">
-User enters the button: add to cart<br/>
-User enters the button: view cart<br/>
-User is successfully Added product to cart<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@4b952a2d</td></tr>
-<tr>
-<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep04_VerifyProductIsAddedIntoCart()'><b>TestStep04_VerifyProductIsAddedIntoCart</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection<br/>
-<a href="#Output-2047984839" onClick='toggleBox("Output-2047984839", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2047984839" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2047984839">
-Product has been added successfuly ie.: Round Neck Shirt<br/>
-Verified product has been added to cart<br/>
-</div>
-</td>
+<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.init()'><b>init</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection</td>
 <td></td>
 <td>0</td>
-<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@4b952a2d</td></tr>
+<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@5025a98f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep01_UserSubmitLoginDetails()'><b>TestStep01_UserSubmitLoginDetails</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection</td>
+<td></td>
+<td>0</td>
+<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@5025a98f</td></tr>
+<tr>
+<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep02_UserNavigateToFeatureCollection()'><b>TestStep02_UserNavigateToFeatureCollection</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection</td>
+<td></td>
+<td>0</td>
+<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@5025a98f</td></tr>
+<tr>
+<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep03_UserAddedTheProduct()'><b>TestStep03_UserAddedTheProduct</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection</td>
+<td></td>
+<td>0</td>
+<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@5025a98f</td></tr>
+<tr>
+<td title='com.myshopify.tests.TC003_AddProductFromFeatureCollection.TestStep04_VerifyProductIsAddedIntoCart()'><b>TestStep04_VerifyProductIsAddedIntoCart</b><br>Test class: com.myshopify.tests.TC003_AddProductFromFeatureCollection</td>
+<td></td>
+<td>0</td>
+<td>com.myshopify.tests.TC003_AddProductFromFeatureCollection@5025a98f</td></tr>
 </table><p>
 </body>
 </html>

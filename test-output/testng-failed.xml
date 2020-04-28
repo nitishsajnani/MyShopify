@@ -1,9 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite thread-count="4" name="Failed suite [Test Set]" parallel="tests">
+  <listeners>
+    <listener class-name="com.myshopify.utilities.Listeners"/>
+  </listeners>
+  <test name="Search and add product to cart">
+    <classes>
+      <class name="com.myshopify.tests.TC001_SearchAndAddProductOnCart"/>
+    </classes>
+  </test> <!-- Search and add product to cart -->
+  <test name="Add quantity and verify price">
     <classes>
       <class name="com.myshopify.tests.TC002_AddQuanityAndVerifyPrice"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Add quantity and verify price -->
+  <test name="Add product from festure collection">
+    <classes>
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection"/>
+    </classes>
+  </test> <!-- Add product from festure collection -->
+  <test name="Add product with multiple sizes ">
+    <classes>
+      <class name="com.myshopify.tests.TC004_AddProductsWithMultipleSizes"/>
+    </classes>
+  </test> <!-- Add product with multiple sizes  -->
+  <test name="Search and add product to cart(failed)" parallel="tests">
+    <classes>
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC003_AddProductFromFeatureCollection -->
+      <class name="com.myshopify.tests.TC004_AddProductsWithMultipleSizes">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC004_AddProductsWithMultipleSizes -->
+      <class name="com.myshopify.tests.TC002_AddQuanityAndVerifyPrice">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC002_AddQuanityAndVerifyPrice -->
+      <class name="com.myshopify.tests.TC001_SearchAndAddProductOnCart">
+        <methods>
+          <include name="TestStep01_UserSubmitLoginDetails"/>
+          <include name="TestStep04_VerifyProductIsAddedIntoCart"/>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+          <include name="TestStep02_UserSearchTheProduct"/>
+          <include name="TestStep03_UserAddedTheProduct"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC001_SearchAndAddProductOnCart -->
+    </classes>
+  </test> <!-- Search and add product to cart(failed) -->
+  <test name="Add product from festure collection(failed)" parallel="tests">
+    <classes>
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection">
+        <methods>
+          <include name="TestStep02_UserNavigateToFeatureCollection"/>
+          <include name="TestStep04_VerifyProductIsAddedIntoCart"/>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+          <include name="TestStep01_UserSubmitLoginDetails"/>
+          <include name="TestStep03_UserAddedTheProduct"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC003_AddProductFromFeatureCollection -->
+      <class name="com.myshopify.tests.TC004_AddProductsWithMultipleSizes">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC004_AddProductsWithMultipleSizes -->
+      <class name="com.myshopify.tests.TC002_AddQuanityAndVerifyPrice">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC002_AddQuanityAndVerifyPrice -->
+      <class name="com.myshopify.tests.TC001_SearchAndAddProductOnCart">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC001_SearchAndAddProductOnCart -->
+    </classes>
+  </test> <!-- Add product from festure collection(failed) -->
+  <test name="Add quantity and verify price(failed)" parallel="tests">
+    <classes>
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC003_AddProductFromFeatureCollection -->
+      <class name="com.myshopify.tests.TC004_AddProductsWithMultipleSizes">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC004_AddProductsWithMultipleSizes -->
+      <class name="com.myshopify.tests.TC002_AddQuanityAndVerifyPrice">
+        <methods>
+          <include name="TestStep02_UserSearchTheProduct"/>
+          <include name="TestStep01_UserSubmitLoginDetails"/>
+          <include name="TestStep04_VerifyProductIsAddedIntoCart"/>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+          <include name="TestStep05_IncreaseQuantityOfSameProduct"/>
+          <include name="TestStep03_UserAddedTheProduct"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC002_AddQuanityAndVerifyPrice -->
+      <class name="com.myshopify.tests.TC001_SearchAndAddProductOnCart">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC001_SearchAndAddProductOnCart -->
+    </classes>
+  </test> <!-- Add quantity and verify price(failed) -->
+  <test name="Add product with multiple sizes (failed)" parallel="tests">
+    <classes>
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC003_AddProductFromFeatureCollection -->
+      <class name="com.myshopify.tests.TC004_AddProductsWithMultipleSizes">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+          <include name="TestStep03_UserAddedTheProductWithMultipleSize"/>
+          <include name="TestStep04_VerifyProductIsAddedIntoCart"/>
+          <include name="TestStep02_UserSearchTheProduct"/>
+          <include name="TestStep01_UserSubmitLoginDetails"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC004_AddProductsWithMultipleSizes -->
+      <class name="com.myshopify.tests.TC002_AddQuanityAndVerifyPrice">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC002_AddQuanityAndVerifyPrice -->
+      <class name="com.myshopify.tests.TC001_SearchAndAddProductOnCart">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close_Test_Session"/>
+        </methods>
+      </class> <!-- com.myshopify.tests.TC001_SearchAndAddProductOnCart -->
+    </classes>
+  </test> <!-- Add product with multiple sizes (failed) -->
+</suite> <!-- Failed suite [Test Set] -->
