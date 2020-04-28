@@ -2,6 +2,8 @@ package com.myshopify.actions;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -52,7 +54,36 @@ public void clickOnViewCart() {
 
 		
 }
- }
+public void NavigateToFeatureCollectionSection() {
+((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element("sec_featureCollection"));
+try {
+	Thread.sleep(500);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+}
+
+
+public void selectProductFromGridList(int productNumber)
+{
+	List<WebElement> products=elements("grid_listItem");
+    try{
+	 if(productNumber<=products.size()){
+		 products.get(productNumber).click();
+		 logMessage("User select the product number from list: "+productNumber);
+	 }
+	 else
+		 logMessage("There is no product found");
+	 }
+ catch(Exception e)
+ {
+	 logMessage("There is no product found");
+ } 
+}
+}
+
+ 
   
   
 

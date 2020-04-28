@@ -6,16 +6,14 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.myshopify.tests.BaseTest;
+public class TC003_AddProductFromFeatureCollection extends BaseTest {
 
-public class TC001_SaerchAndAddProductOnCart extends BaseTest {
-
-	public TC001_SaerchAndAddProductOnCart(String baseUrl) {
+	public TC003_AddProductFromFeatureCollection(String baseUrl) {
 		super("loginApp.baseUrl");
 	}
 
 	String  password;
-	String productName="RoundNeck Shirt";
+	String productName="Round Neck Shirt";
 	int ProductNumberFromList=1;
 	@BeforeClass
 	public void init() {
@@ -32,11 +30,9 @@ public class TC001_SaerchAndAddProductOnCart extends BaseTest {
 	
 	
 	@Test
-	public void TestStep02_UserSearchTheProduct() {
-		Shop.searchPage.clickOnSearchButton();
-		Shop.searchPage.enterProduct(productName);
-		Shop.searchPage.clickOnSearchIcon();
-		Shop.searchPage.selectProduct(ProductNumberFromList);
+	public void TestStep02_UserNavigateToFeatureCollection() {
+		Shop.searchPage.NavigateToFeatureCollectionSection();
+		Shop.searchPage.selectProductFromGridList(ProductNumberFromList);
 		Reporter.log("User is able to search and select the product",true);
 	}
 	
@@ -46,6 +42,7 @@ public class TC001_SaerchAndAddProductOnCart extends BaseTest {
 		Shop.searchPage.clickOnViewCart();	
 		Reporter.log("User is successfully Added product to cart",true);
 	}
+	
 	@Test
 	public void TestStep04_VerifyProductIsAddedIntoCart() {
 	Shop.cartPage.verifyProductAddedToCart(productName);	

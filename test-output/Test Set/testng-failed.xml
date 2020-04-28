@@ -4,23 +4,15 @@
   <listeners>
     <listener class-name="com.myshopify.utilities.Listeners"/>
   </listeners>
-  <test name="Login into application">
+  <test name="Search and add product to cart">
     <classes>
-      <class name="com.myshopify.tests.TC001_LoginIntoApplication"/>
+      <class name="com.myshopify.tests.TC001_SearchAndAddProductOnCart"/>
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection"/>
     </classes>
-  </test> <!-- Login into application -->
-  <test name="Login into application(failed)">
+  </test> <!-- Search and add product to cart -->
+  <test name="Add product from festure collection">
     <classes>
-      <class name="com.myshopify.tests.TC001_LoginIntoApplication">
-        <methods>
-          <include name="handleTestMethodName"/>
-          <include name="beforeMethod"/>
-          <include name="close_Test_Session"/>
-          <include name="TestStep01_UserSubmitLoginDetails"/>
-          <include name="init"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.myshopify.tests.TC001_LoginIntoApplication -->
+      <class name="com.myshopify.tests.TC003_AddProductFromFeatureCollection"/>
     </classes>
-  </test> <!-- Login into application(failed) -->
+  </test> <!-- Add product from festure collection -->
 </suite> <!-- Failed suite [Test Set] -->

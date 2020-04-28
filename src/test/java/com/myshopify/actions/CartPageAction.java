@@ -24,4 +24,32 @@ public class CartPageAction extends GetPage {
 		Assert.assertEquals(products.get(0).getText().contains(productName),true);
 		logMessage("Product has been added successfuly ie.: "+productName);
 	}
+	
+	public void validateTheProductPriceWithQuantity()
+	{
+		
+		
+		
+	}
+	
+	public void validateTheProductPrice(String productQuantity) {
+		 double price =calculateItemPrice();
+		    logMessage("Product price for single item:"+price);
+         hardWait(2); 
+	  	enterText(element("inp_Quantity"),productQuantity);		
+        hardWait(2);
+        int quantityoFItem=Integer.parseInt(productQuantity);
+		 double finalPrice =calculateItemPrice();
+         logMessage("Product price for " +productQuantity+ "items: "+finalPrice);
+         Assert.assertEquals(price*quantityoFItem, finalPrice);
+	      logMessage("Verifed product price updated with respect to product quantity");
+	}
+	public double calculateItemPrice() {
+   String price=element("txt_finalPrice").getText();
+   String updatedPrice=price.replace(",", "");
+   String[] priceWithoutCurrency=updatedPrice.split(" ");
+   String priceOfItem=	priceWithoutCurrency[1];
+  double finalPrice=Double.parseDouble(priceOfItem);
+	return finalPrice;
+	}
 }

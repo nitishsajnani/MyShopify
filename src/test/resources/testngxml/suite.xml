@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Test Set">
+<suite name="Test Set"  parallel="tests" thread-count="2">
  <listeners>
    <listener class-name="com.myshopify.utilities.Listeners"/>
  
   </listeners>
-	<test name="Login into application">
+	<test name="Search and add product to cart">
 		<classes>
 			<class
-				name="com.myshopify.tests.TC001_LoginIntoApplication" />
+				name="com.myshopify.tests.TC001_SearchAndAddProductOnCart" />
 		</classes>
 	</test>
 
+	
+	<test name="Add product from festure collection">
+		<classes>
+			<class
+				name="com.myshopify.tests.TC003_AddProductFromFeatureCollection" />
+		</classes>
+	</test>	
 </suite>
