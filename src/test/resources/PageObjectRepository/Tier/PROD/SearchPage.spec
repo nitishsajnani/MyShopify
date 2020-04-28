@@ -11,3 +11,4 @@ btn_addToCart					css				[aria-label='Add to cart']
 lnk_viewCart					css				[href='/cart']
 sec_featureCollection			css				.section-header.text-center h2
 grid_listItem					css				.grid-view-item.product-card a
+dd_productSize					css				#SingleOptionSelector-1

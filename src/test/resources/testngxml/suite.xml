@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Test Set"  parallel="tests" thread-count="2">
+<suite name="Test Set"  parallel="tests" thread-count="4">
  <listeners>
    <listener class-name="com.myshopify.utilities.Listeners"/>
  
@@ -12,6 +12,12 @@
 		</classes>
 	</test>
 
+	<test name="Add quantity and verify price">
+		<classes>
+			<class
+				name="com.myshopify.tests.TC002_AddQuanityAndVerifyPrice" />
+		</classes>
+	</test>
 	
 	<test name="Add product from festure collection">
 		<classes>
@@ -19,4 +25,10 @@
 				name="com.myshopify.tests.TC003_AddProductFromFeatureCollection" />
 		</classes>
 	</test>	
+	<test name="Add product with multiple sizes ">
+		<classes>
+			<class
+				name="com.myshopify.tests.TC004_AddProductsWithMultipleSizes" />
+		</classes>
+	</test>
 </suite>

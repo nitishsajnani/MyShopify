@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.myshopify.getpageobjects.GetPage;
 
@@ -48,6 +49,7 @@ public void selectProduct(int productNumber)
 }
 public void clickOnAddedToCart() {
 	clickOnButton(element("btn_addToCart"),"add to cart");	
+	hardWait(3);
 }
 public void clickOnViewCart() {
 	clickOnButton(element("lnk_viewCart"),"view cart");	
@@ -81,10 +83,14 @@ public void selectProductFromGridList(int productNumber)
 	 logMessage("There is no product found");
  } 
 }
+public void selectSizeOfProduct(String sizeOfProduct) {
+  Select size=new Select(element("dd_productSize"));	
+  size.selectByValue(sizeOfProduct);
+  logMessage("User selected the product size: "+sizeOfProduct);
+}
 }
 
  
   
   
-
 
